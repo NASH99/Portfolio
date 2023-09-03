@@ -1,0 +1,13 @@
+.container{
+  display: flex;
+  margin: 160px;
+  justify-content: center;
+  align-items: center;
+
+  .container-title{
+    height: 500px;
+    h1{
+      margin: 0;
+    }
+  }
+}
