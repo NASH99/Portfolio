@@ -10,10 +10,21 @@
     h1{
       margin: 0;
     }
+    .title{
+      display:flex;
+      gap: 10px;
+    }
+    .title-color{
+      color: #d6fb42;
+    }
+    p{
+      padding-bottom: 12px;
+    }
   }
 }
 
-@media only screen and (max-width: 800px) {
+
+@media only screen and (max-width: 1020px) {
   .container {
     margin: 0;
     padding: 70px 30px 30px 30px;
@@ -23,6 +34,14 @@
   }
   .container-title{
     max-width: 400px;
+    .title{
+      display:flex;
+      flex-direction: column;
+
+    }
+    .title-color{
+      color: #d6fb42;
+    }
   }
 
   .container-img{
