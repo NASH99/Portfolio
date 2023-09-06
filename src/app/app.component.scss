@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: space-around;
 
+
   ul{
     display: flex;
     justify-content: center;
@@ -26,4 +27,11 @@
 
 img{
   width: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar{
+    width: 100%;
+
+  }
 }
