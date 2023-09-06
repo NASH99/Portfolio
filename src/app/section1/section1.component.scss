@@ -1,13 +1,37 @@
 .container{
   display: flex;
-  margin: 80px 160px 0 160px;
+  margin: 50px 100px 0 100px;
   justify-content: center;
   align-items: center;
 
   .container-title{
     height: 500px;
+    width: 500px;
     h1{
       margin: 0;
     }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    margin: 0;
+    padding: 70px 30px 30px 30px;
+    .container-title{
+      height: 400px;
+    }
+  }
+  .container-title{
+    max-width: 400px;
+  }
+
+  .container-img{
+    width: 20%;
+  }
+  img{
+    width: 200px;
+    object-fit:cover;
+    background: fixed;
+    margin: -30px 0px 0px -80px;
   }
 }
