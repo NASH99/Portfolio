@@ -32,6 +32,10 @@ img{
 @media only screen and (max-width: 600px) {
   .navbar{
     width: 100%;
-
+    justify-content: space-between;
+    margin: 0 16px 0 16px;
+    a{
+      font-size: 18px;
+    }
   }
 }
