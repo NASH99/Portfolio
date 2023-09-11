@@ -1,6 +1,6 @@
 .navbar{
   color: white;
-  width: 100%;
+  width: 100vw;
   height: 70px;
   justify-content: center;
   align-items: center;
@@ -32,8 +32,8 @@ img{
 @media only screen and (max-width: 600px) {
   .navbar{
     width: 100%;
-    justify-content: space-between;
-    margin: 0 16px 0 16px;
+    justify-content: space-around;
+
     a{
       font-size: 18px;
     }
