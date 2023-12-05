@@ -1,0 +1,122 @@
+*{
+  padding-bottom: 8px;
+}
+
+.main-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card-container{
+  width: 100%;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+  //Elementos
+  .card-large-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .avatar{
+      img{
+        border-radius: 50%;
+      }
+    }
+    .h1-heading{
+      h1{
+        padding: 0;
+        margin: 0;
+        font-family: 'Inter-Regular';
+      }
+    }
+  }
+
+  .card-medium-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    .card-medium-1--text{
+      padding: 0;
+      align-items: center;
+      justify-content: space-evenly;
+      display: flex;
+      flex-direction: column;
+      height: 100px;
+      h2{
+        padding: 0;
+        margin: 0;
+        font-size: 28px;
+        font-family: 'Inter-Regular';
+      }
+    }
+    .card-medium--button{
+      width: 400px;
+      max-width: 400px;
+      height: 80px;
+      background-color: #fe5e19;
+      border-radius: 50px;
+      border-style: none;
+      color: #ffffff;
+      font-size: 20px;
+    }
+  }
+
+  .card-large-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    p{
+      padding: 0;
+      margin: 0;
+      font-family: 'Inter-Regular';
+      font-size: 48px;
+    }
+    p:last-child{
+      color: #8a8a93;
+    }
+  }
+
+
+  h1{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 12px;
+  }
+
+
+@media only screen and (max-width: 1020px) {
+  .card-container{
+    flex-direction: column;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+}
+@media only screen and (max-width: 767px) {
+  section{
+
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  section{
+
+  }
+
+}

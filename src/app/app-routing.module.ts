@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './views/about/about.component';
 import { HomeComponent } from './views/home/home.component';
+import { ProyectComponent } from './views/proyect/proyect.component';
+
 
 const routes: Routes = [
-
-  {path: 'about', component:AboutComponent},
-  {path: '/', component:HomeComponent}
+  {path: '',redirectTo: '/home', pathMatch:'full'},
+  {path: 'home', component:HomeComponent},
+  {path: 'about', component:AboutComponent}
 ];
 
 @NgModule({
