@@ -16,6 +16,13 @@
   flex-direction: row;
   gap: 8px;
   padding: 0;
+  @media only screen and (max-width: 1020px) {
+    max-width: 900px;
+
+    flex-direction: column;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
 }
   //Elementos
   .card-large-1{
@@ -98,12 +105,6 @@
     gap: 12px;
   }
 
-@media only screen and (max-width: 1020px) {
-  .card-container{
-    flex-direction: column;
-    margin-left: 8px;
-    margin-right: 8px;
-  }
-}
+
 @media only screen and (max-width: 767px) {}
 @media only screen and (max-width: 480px) {}

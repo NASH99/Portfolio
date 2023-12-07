@@ -36,70 +36,70 @@
   src: url('./assets/fonts/Inter/Inter-Bold.ttf');
 }
 
+:root {
+  --gradient-background: linear-gradient(153deg, rgba(160,44,255,1) 0%, rgba(255,41,55,1) 40%, rgba(255,109,44,1) 60%, rgba(255,147,31,1) 100%);
+  --primary:white;
+  --secondary:black;
+  --background:black;
+  --card-background:#131315;
+  --card-background-active:#242428;
+  --font-color:white;
+  --font-color2:#8a8a93;
+}
+
+html{
+  font-size: 16px;
+}
+
 body{
   padding: 0;
   margin: 0;
   background-color: black;
   color: white;
   h1{
-    font-size: 52px;
+    font-size: 3rem;
     font-family: 'Inter-Bold';
   }
   h2{
-    font-size: 52px;
+    font-size: 2rem;
     font-family: 'Inter-Bold';
   }
   p{
+    font-size: 1rem;
     font-family: 'Inter-Regular';
   }
 }
 
+@mixin card($width, $height){
+  background-color: var(--card-background);
+  width: $width;
+  height: $height;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.54);
+  -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.54);
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.54);
+  transition-duration: 500ms;
+  &:hover{
+    background-color: var(--card-background-active);
+    transition-duration: 500ms;
+  }
+}
 //Cards
 #card-medium{
-  background-color: #131315;
-  width: 40%;
-  height: 480px;
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.54);
-  -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.54);
-  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.54);
-
+  @include card(40%,480px);
 }
 #card-large{
-  background-color: #131315;
-  width: 60%;
-  height: 480px;
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.54);
-  -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.54);
-  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.54);
+  @include card(60%,480px);
 }
 #card-xlarge{
-  background-color: #131315;
-  height: 480px;
-  width: 100%;
-  max-width: 1200px;
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.54);
-  -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.54);
-  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.54);
+  @include card(100%,480px);
 }
 #card-xxlarge{
-  background-color: #131315;
-  height: 780px;
-  width: 100%;
-  max-width: 1200px;
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.54);
-  -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.54);
-  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.54);
+  @include card(100%,780px);
 }
 
 #card-tech{
-  width: 150px;
-  height: 150px;
-  background-color: #131315;
-  border-radius: 20px;
+  @include card(150px,150px);
 }
 
 @media only screen and (max-width: 1020px) {

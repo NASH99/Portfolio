@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class ButtonComponent {
 
-  @Input() name = 'dsfds';
+  @Input() name = '';
 }

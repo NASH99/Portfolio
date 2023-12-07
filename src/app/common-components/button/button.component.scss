@@ -1,16 +1,21 @@
 button{
   font-family: 'Inter-Bold';
-  background-color: #d6fb42;
-  color: black;
+  color: white;
   padding: 30px;
   justify-content: center;
   align-items: center;
   border-style: none;
-  transition-duration: 1s;
+  transition-duration: 300ms;
+  border-radius: 50px;
+  width: 400px;
+  max-width: 400px;
+  height: 80px;
+  font-size: 1rem;
+  background: var(--gradient-background);
 }
 button:hover{
-  background-color: black;
-  color: #d6fb42;
-  transition-duration: 1s;
   cursor: pointer;
+  transition-duration: 300ms;
+  background: white;
+  color: red;
 }
