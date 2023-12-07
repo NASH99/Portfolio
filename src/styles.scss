@@ -100,6 +100,17 @@ body{
 
 #card-tech{
   @include card(150px,150px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  img{
+    padding: 0;
+  }
+  p{
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 1020px) {
