@@ -59,10 +59,20 @@ body{
   h1{
     font-size: 3rem;
     font-family: 'Inter-Bold';
+    @media only screen and (max-width: 600px) {
+      font-size: 2.5rem;
+    }
   }
   h2{
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: 'Inter-Bold';
+  }
+  .p-title{
+    font-size: 2.5rem;
+    font-family: 'Inter-Regular';
+    @media only screen and (max-width: 600px) {
+      font-size: 2rem;
+    }
   }
   p{
     font-size: 1rem;
@@ -122,8 +132,4 @@ body{
   }
 }
 
-@media only screen and (max-width: 600px) {
-  h1{
-    font-size: 40px;
-  }
-}
+
