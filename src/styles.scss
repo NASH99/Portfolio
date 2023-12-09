@@ -75,14 +75,16 @@ body{
     }
   }
   .p-subtitle{
+    color: white;
     font-size: 2rem;
     font-family: 'Inter-Regular';
     @media only screen and (max-width: 600px) {
       font-size: 1.5rem;
     }
   }
-  p{
-    font-size: 1rem;
+  .p-text{
+    color: var(--font-color2);
+    font-size: 1.5rem;
     font-family: 'Inter-Regular';
   }
 }
@@ -113,6 +115,9 @@ body{
 #card-large{
   @include card(60%,480px);
 }
+#card-large-tall{
+  @include card(50%,auto);
+}
 #card-xlarge{
   @include card(100%,480px);
 }
@@ -140,6 +145,9 @@ body{
     width: 100%;
   }
   #card-medium{
+    width: 100%;
+  }
+  #card-large-tall{
     width: 100%;
   }
 }
