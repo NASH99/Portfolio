@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from "@angular/common/http";
+import { ChuckModule } from './chuck/chuck.module';
+import { PortfolioModule } from './portfolio/portfolio.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonComponent } from './common-components/button/button.component';
-import { ProjectsComponent } from './projects/projects.component';
 import { TechnologiesComponent } from './technologies/technologies.component';
 import { HomeComponent } from './views/home/home.component';
 import { ContactComponent } from './views/contact/contact.component';
@@ -17,7 +19,6 @@ import { NavbarComponent } from './common-components/navbar/navbar.component';
   declarations: [
     AppComponent,
     ButtonComponent,
-    ProjectsComponent,
     TechnologiesComponent,
     HomeComponent,
     ContactComponent,
@@ -28,7 +29,10 @@ import { NavbarComponent } from './common-components/navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ChuckModule,
+    PortfolioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
